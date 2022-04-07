@@ -1,6 +1,6 @@
 
 //query selectors
-var buttonLetsCook = document.querySelector("#letscook");
+var buttonLetsCook = document.querySelector(".letscook");
 var cookpot = document.querySelector(".cookpot");
 var youShouldMake = document.querySelector(".you-should-make");
 
@@ -12,6 +12,7 @@ buttonLetsCook.addEventListener("click", showRecipe);
 function showRecipe(){
   event.preventDefault();
   hideCookpot();
+}
 
 function hideCookpot(){
   cookpot.classList.add("hidden");
