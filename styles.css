@@ -9,3 +9,85 @@ red - #ee5253
 */
 /* head, body {
   background-color: #0fb9b1; */
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-image: url("assets/burger-friends.jpg");
+    background-size: cover;
+  }
+
+  header {
+    background-color: #0fb9b1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  button {
+    background: white;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: black;
+    height: 30px;
+    width: 100px;
+  }
+
+  .letscook {
+    background-color: #0fb9b1;
+    font-size: 14px;
+    height: 30px;
+    width: 170px;
+  }
+
+  .wrapper {
+    display: flex;
+  	justify-content: space-evenly;
+
+  }
+
+  .box1 {
+    background-color: rgba(225, 225, 225, .9);
+    height: 250px;
+    width: 300px;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+    list-style: none;
+  }
+
+  .box2 {
+    background-color: rgba(225, 225, 225, .9);
+    height: 250px;
+    width: 300px;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .cookpot {
+    height: 120px;
+
+  }
+
+  .hidden {
+    display: none!important;
+  }
+
+  .results{
+    display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
