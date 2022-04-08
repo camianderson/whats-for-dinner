@@ -12,35 +12,34 @@ buttonLetsCook.addEventListener("click", showRecipe);
 var sides = ["fries", "beans", "rice", "salad", "baked potato"];
 var mainDishes = ["Strogonoff", "Hamburger", "Pasta", "Tacos", "Pizza"];
 var desserts = ["Ice Cream", "Pudim", "Black Forest Cake", "Cupcake"];
+var meal = [];
 
-
-var sideOption = document.querySelector('input[value="side"]');
-var mainOption = document.querySelector('input[value="main-dish"]');
-var dessertOption = document.querySelector('input[value="dessert"]');
-var entireMealOption = document.querySelector('input[value="entire-meal"]');
-
+var foodArray = {
+  sides: sides,
+  main: mainDishes,
+  dessert: desserts,
+  meal: meal,
+}
 
 // functions
 function showRecipe(){
   event.preventDefault();
   hideCookpot();
+  displayDishes();
 }
 
 function hideCookpot(){
   cookpot.classList.add("hidden");
   youShouldMake.classList.remove("hidden");
-  }
-
-function displayDishes() {
-  if(sideOption.checked){
-    foodSuggestion.innerText = sides[getRandomIndex(sides)];
-  } else if (mainOption.checked){
-    foodSuggestion.innerText = mainDishes[getRandomIndex(mainDishes)]
-  } else if (dessertOption.checked){
-    oodSuggestion.innerText = desserts[getRandomIndex(desserts)]
-  }
 }
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
+  }
+
+function displayDishes() {
+  var radio = document.querySelector('input[type=radio]:checked');
+  var randomMeal = getRandomIndex(foodArray[radio.value]);
+  foodSuggestion.innerText = `${foodArray[radio.value][randomMeal]}`;
+
 }
