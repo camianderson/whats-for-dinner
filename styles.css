@@ -91,3 +91,15 @@ red - #ee5253
   	justify-content: center;
   	align-items: center;
   }
+
+.result{
+  font-size: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+.you-should-make {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0px;
+}
