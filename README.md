@@ -1,23 +1,43 @@
-# What's for Dinner?
+# What is for dinner?
 
-## Overview
+This is an app that will help you to choose a random side dish, entree and desert to cook! You cal also find all three at the same time! No more time wasted on thinking about what to eat!
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+## Table of Contents
+  - [Table of Contents](#table-of-contents)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Project Specs](#project-specs)
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+## Technologies
+  - Javascript
+  - HTML
+  - CSS
 
-## Learning Goals
+## Features
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+   - You are able to select a random entree, side and a desert.
+   - You can select a entire meal at once.
 
-## Setup
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+## Possible Future Extensions
+
+  - Create a clear button to remove the options on the the should make section;
+  - Create a form so user can add recipes;
+  - Login page so user can save favorite combinations;
+
+## Set Up
+
+1. Fork this repo  
+2. Clone the repo to your local machine
+3. View the project in the browser by running open index.html in your terminal
+
+## Contributor
+
+Cami Anderson [GitHub](https://github.com/camianderson/whats-for-dinner)
+
+## Project Specs
+
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-1/dinner.html)
