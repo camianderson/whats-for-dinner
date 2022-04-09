@@ -41,9 +41,8 @@ function displayDishes() {
   var radio = document.querySelector('input[type=radio]:checked');
   var randomMeal = getRandomIndex(foodArray[radio.value]);
   if( radio.value === 'meal'){
-    foodSuggestion.innerText = `${foodArray["main"][randomMeal]} with a side of `
-    foodSuggestion.innerText += ` ${foodArray["sides"][randomMeal]} `
-    foodSuggestion.innerText += ` and ${foodArray["dessert"][randomMeal]} for dessert!`
+    foodSuggestion.innerText = `${foodArray["main"][getRandomIndex(foodArray["main"])]} with a side of ${foodArray["sides"][getRandomIndex(foodArray["sides"])]} and ${foodArray["dessert"][getRandomIndex(foodArray["dessert"])]} for dessert!`
+    console.log(foodArray["dessert"][randomMeal])
   } else {
     foodSuggestion.innerText = `${foodArray[radio.value][randomMeal]}`;
   }
