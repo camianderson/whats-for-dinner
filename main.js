@@ -19,31 +19,30 @@ var foodArray = {
   main: mainDishes,
   dessert: desserts,
   meal: meal,
-}
+};
 
 // functions
 function showRecipe(){
   event.preventDefault();
   hideCookpot();
   displayDishes();
-}
+};
 
 function hideCookpot(){
   cookpot.classList.add("hidden");
   youShouldMake.classList.remove("hidden");
-}
+};
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
-  }
+};
 
 function displayDishes() {
-  var radio = document.querySelector('input[type=radio]:checked');
+  var radio = document.querySelector("input[type=radio]:checked");
   var randomMeal = getRandomIndex(foodArray[radio.value]);
-  if( radio.value === 'meal'){
+  if( radio.value === "meal"){
     foodSuggestion.innerText = `${foodArray["main"][getRandomIndex(foodArray["main"])]} with a side of ${foodArray["sides"][getRandomIndex(foodArray["sides"])]} and ${foodArray["dessert"][getRandomIndex(foodArray["dessert"])]} for dessert!`
-    console.log(foodArray["dessert"][randomMeal])
   } else {
     foodSuggestion.innerText = `${foodArray[radio.value][randomMeal]}`;
   }
-}
+};
